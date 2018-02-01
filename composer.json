@@ -1,0 +1,26 @@
+{
+    "name": "ak_smallsha/application",
+    "description": "smallsha first application package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0",
+    	},
+
+    	"autoload": {
+        "psr-4": {
+            "Smallsha\\": "src/"
+        },
+        "files": [
+            "Func.php"
+        ]
+    },
+
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}
