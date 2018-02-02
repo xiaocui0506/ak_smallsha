@@ -2,5 +2,5 @@
 
 function test(){
 
-  echo '12321321';
+  echo 'hello smallsha';
 }
