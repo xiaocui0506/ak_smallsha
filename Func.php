@@ -2,5 +2,5 @@
 
 function test(){
 
-  echo 'hello smallsha';
+  echo 'hello-smalsha';
 }
