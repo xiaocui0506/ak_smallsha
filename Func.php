@@ -31,4 +31,21 @@ if(!function_exists('isPost')){
 	  return ($_SERVER['REQUEST_METHOD'] == 'POST' && checkurlHash($GLOBALS['verify']) && (empty($_SERVER['HTTP_REFERER']) || preg_replace("~https?:\/\/([^\:\/]+).*~i", "\\1", $_SERVER['HTTP_REFERER']) == preg_replace("~([^\:]+).*~", "\\1", $_SERVER['HTTP_HOST']))) ? true : false;
 	}
 }
+
+/**
+ * 对象数组转换
+ * @return int
+ */
+if(!function_exists('jsonArray')){
+	function jsonArray($to){
+		if(gettype($to) == 'array'){
+		  return $a= json_decode( json_encode( $to));
+		}elseif(gettype($to)== 'object'){
+          return json_decode( json_encode( $to),true);
+		}
+	}
+
+}
+
+
  
