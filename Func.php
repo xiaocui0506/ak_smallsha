@@ -45,6 +45,20 @@ if(!function_exists('jsonArray')){
 		}
 	}
 
+
+/**
+ * base64  结合 serialize 转化 array 
+ * @return int
+ */
+if(!function_exists('baseSerialize')){
+	function baseSerialize($to){
+		if(gettype($to) == 'array'){
+		  return base64_encode( serialize($to));
+		}else{
+          return unserialize( base64_decode( $to));
+		}
+	}
+
 }
 
 
