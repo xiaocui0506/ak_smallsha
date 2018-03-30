@@ -44,7 +44,7 @@ if(!function_exists('jsonArray')){
           return json_decode( json_encode( $to),true);
 		}
 	}
-
+}
 
 /**
  * base64  结合 serialize 转化 array 
@@ -58,8 +58,11 @@ if(!function_exists('baseSerialize')){
           return unserialize( base64_decode( $to));
 		}
 	}
-
 }
+
+
+
+
 
 
  
