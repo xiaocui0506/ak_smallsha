@@ -59,7 +59,6 @@ if(!function_exists('baseSerialize')){
 		}
 	}
 
-	发生的
 }
 
 
