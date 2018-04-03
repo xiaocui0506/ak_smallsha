@@ -1,5 +1,5 @@
 <?php
-namespace Smallsha\common;
+namespace Smallsha\Common;
 
 /**
  * @author: smallsha
